@@ -1,19 +1,19 @@
-name: IMDb Rating Monitor
+name: IMDb High Score Monitor
 
 on:
   schedule:
-    # 每天 UTC 12:23 运行（避开整点高峰，可改成你想要的时间）
-    - cron: '23 12 * * *'
-  workflow_dispatch:  # 允许手动触发
+    # 每天 UTC 13:17 运行（避开整点）
+    - cron: '17 13 * * *'
+  workflow_dispatch:
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # 需要写入权限才能 commit 回仓库
+      contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -29,13 +29,16 @@ jobs:
       - name: Run monitor
         env:
           OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+          MIN_RATING: "8.0"
+          MIN_VOTES: "10000"
+          MAX_OMDB_PER_RUN: "15"
         run: python monitor.py
 
-      - name: Commit and push changes if any
+      - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add watchlist.csv rating_history.csv metadata_cache.json latest_report.txt || true
-          git diff --staged --quiet || git commit -m "Update ratings and metadata [skip ci]"
+          git add history/ rating_changes.csv latest_report.txt latest.csv metadata_cache.json || true
+          git diff --staged --quiet || git commit -m "Update high-score list ${{ github.run_id }} [skip ci]"
           git push
         continue-on-error: true
