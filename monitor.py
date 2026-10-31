@@ -182,16 +182,16 @@ def main():
     # Optional OMDb enrichment for new or top changed
     metadata_cache = load_json(CACHE_FILE)
     omdb_calls = 0
-    for ch in changes:
+    for ch in high_score:
         if omdb_calls >= MAX_OMDB_PER_RUN:
             break
         iid = ch["imdb_id"]
         if iid not in metadata_cache and OMDB_API_KEY:
             print(f"Enriching {iid} via OMDb...")
             meta = fetch_omdb(iid)
+            omdb_calls += 1
             if meta:
                 metadata_cache[iid] = {**meta, "cached_at": now.isoformat()}
-                omdb_calls += 1
                 time.sleep(0.4)
 
     if omdb_calls:
