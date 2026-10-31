@@ -1,61 +1,61 @@
 IMDb High Score Monitor Report
 Date: 2026-10-31
-Filter: rating >= 8.0, votes >= 10000
-Total high-score movies: 3767
-New: 3767
+Filter: rating >= 7.0, votes >= 10000
+Total high-score movies: 4957
+New: 4957
 Changed: 0
 Dropped: 0
 
 === Top 20 Current High Score ===
-10.0   ()  [tt38770727]  votes=27,005
-9.9   ()  [tt4283088]  votes=316,190
-9.9   ()  [tt4283094]  votes=234,125
-9.9   ()  [tt2178784]  votes=188,953
-9.9   ()  [tt34952922]  votes=100,987
-9.9   ()  [tt12187040]  votes=90,458
-9.9   ()  [tt39848784]  votes=53,246
-9.9   ()  [tt8084176]  votes=49,175
-9.9   ()  [tt11294360]  votes=46,317
-9.9   ()  [tt11028174]  votes=34,943
-9.9   ()  [tt1204265]  votes=29,807
-9.9   ()  [tt9313978]  votes=25,670
-9.9   ()  [tt1310121]  votes=23,148
-9.9   ()  [tt3748420]  votes=22,026
-9.9   ()  [tt3673600]  votes=20,253
-9.9   ()  [tt0701989]  votes=20,211
-9.9   ()  [tt3827236]  votes=15,601
-9.8   ()  [tt2301455]  votes=298,893
-9.8   ()  [tt9906260]  votes=172,517
-9.8   ()  [tt1683088]  votes=162,138
+9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,259,719
+9.2  The Godfather (1972)  [tt0068646]  votes=2,269,371
+9.2  You Can See Everything (2026)  [tt45368240]  votes=21,386
+9.1  The Dark Knight (2008)  [tt0468569]  votes=3,245,557
+9.1  The Chaos Class (1975)  [tt0252487]  votes=46,940
+9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,256
+9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,204,980
+9.0  Schindler's List (1993)  [tt0108052]  votes=1,611,601
+9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,521,977
+9.0  12 Angry Men (1957)  [tt0050083]  votes=1,010,176
+9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,055
+8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,249,086
+8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=39,833
+8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,517
+8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,269
+8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,182
+8.9  The Message (1976)  [tt0075143]  votes=12,226
+8.8  Inception (2010)  [tt1375666]  votes=2,885,093
+8.8  Fight Club (1999)  [tt0137523]  votes=2,678,718
+8.8  Forrest Gump (1994)  [tt0109830]  votes=2,549,702
 
 === Changes ===
-NEW     10.0   ()  [tt38770727]
-NEW     9.9   ()  [tt4283088]
-NEW     9.9   ()  [tt4283094]
-NEW     9.9   ()  [tt2178784]
-NEW     9.9   ()  [tt34952922]
-NEW     9.9   ()  [tt12187040]
-NEW     9.9   ()  [tt39848784]
-NEW     9.9   ()  [tt8084176]
-NEW     9.9   ()  [tt11294360]
-NEW     9.9   ()  [tt11028174]
-NEW     9.9   ()  [tt1204265]
-NEW     9.9   ()  [tt9313978]
-NEW     9.9   ()  [tt1310121]
-NEW     9.9   ()  [tt3748420]
-NEW     9.9   ()  [tt3673600]
-NEW     9.9   ()  [tt0701989]
-NEW     9.9   ()  [tt3827236]
-NEW     9.8   ()  [tt2301455]
-NEW     9.8   ()  [tt9906260]
-NEW     9.8   ()  [tt1683088]
-NEW     9.8   ()  [tt3866850]
-NEW     9.8   ()  [tt13857684]
-NEW     9.8   ()  [tt9898836]
-NEW     9.8   ()  [tt17505964]
-NEW     9.8   ()  [tt13605714]
-NEW     9.8   ()  [tt13819632]
-NEW     9.8   ()  [tt17594170]
-NEW     9.8   ()  [tt17277218]
-NEW     9.8   ()  [tt10023374]
-NEW     9.8   ()  [tt19811660]
+NEW     9.3  The Shawshank Redemption (1994)  [tt0111161]
+NEW     9.2  The Godfather (1972)  [tt0068646]
+NEW     9.2  You Can See Everything (2026)  [tt45368240]
+NEW     9.1  The Dark Knight (2008)  [tt0468569]
+NEW     9.1  The Chaos Class (1975)  [tt0252487]
+NEW     9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]
+NEW     9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]
+NEW     9.0  Schindler's List (1993)  [tt0108052]
+NEW     9.0  The Godfather Part II (1974)  [tt0071562]
+NEW     9.0  12 Angry Men (1957)  [tt0050083]
+NEW     9.0  Unpaarvayil (2025)  [tt15176374]
+NEW     8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]
+NEW     8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]
+NEW     8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]
+NEW     8.9  O.J.: Made in America (2016)  [tt5275892]
+NEW     8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]
+NEW     8.9  The Message (1976)  [tt0075143]
+NEW     8.8  Inception (2010)  [tt1375666]
+NEW     8.8  Fight Club (1999)  [tt0137523]
+NEW     8.8  Forrest Gump (1994)  [tt0109830]
+NEW     8.8  Pulp Fiction (1994)  [tt0110912]
+NEW     8.8  The Lord of the Rings: The Two Towers (2002)  [tt0167261]
+NEW     8.8  The Good, the Bad and the Ugly (1966)  [tt0060196]
+NEW     8.8  Punjab '95 (2026)  [tt28089784]
+NEW     8.8  Mirror Game (2016)  [tt5354160]
+NEW     8.8  Tosun Pasha (1976)  [tt0253828]
+NEW     8.8  The Foster Brothers (1976)  [tt0253779]
+NEW     8.8  The Marathon Family (1982)  [tt0084302]
+NEW     8.8  C/o Kancharapalem (2018)  [tt7391996]
+NEW     8.8  The Phantom of the Opera at the Royal Albert Hall (2011)  [tt2077886]

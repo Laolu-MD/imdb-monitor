@@ -219,5 +219,170 @@
     "boxoffice": null,
     "runtime": "23 min",
     "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt0068646": {
+    "rated": "R",
+    "genre": "Crime, Drama",
+    "director": "Francis Ford Coppola",
+    "actors": "Marlon Brando, Al Pacino, James Caan",
+    "language": "English, Italian, Latin",
+    "country": "United States",
+    "boxoffice": "$136,381,073",
+    "runtime": "175 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt45368240": {
+    "rated": "R",
+    "genre": "Documentary, Biography",
+    "director": "Nathan Fielder, Lance Oppenheim",
+    "actors": "Billy Evans, Nathan Fielder, Elizabeth Holmes",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": "N/A",
+    "runtime": "174 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0252487": {
+    "rated": "N/A",
+    "genre": "Comedy",
+    "director": "Ertem Egilmez",
+    "actors": "Kemal Sunal, Münir Özkul, Halit Akçatepe",
+    "language": "Turkish",
+    "country": "Turkey",
+    "boxoffice": "N/A",
+    "runtime": "87 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0259534": {
+    "rated": "PG",
+    "genre": "Animation, Action, Adventure",
+    "director": "Ram Mohan, Yûgô Sakô, Kôichi Sasaki",
+    "actors": "Arun Govil, Namrata Sawhney, Shatrughan Sinha",
+    "language": "Hindi",
+    "country": "India, Japan",
+    "boxoffice": "N/A",
+    "runtime": "135 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0167260": {
+    "rated": "PG-13",
+    "genre": "Adventure, Drama, Fantasy",
+    "director": "Peter Jackson",
+    "actors": "Elijah Wood, Viggo Mortensen, Ian McKellen",
+    "language": "English, Quenya, Old English, Sindarin",
+    "country": "New Zealand, United States",
+    "boxoffice": "$386,975,644",
+    "runtime": "201 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0108052": {
+    "rated": "R",
+    "genre": "Biography, Drama, History",
+    "director": "Steven Spielberg",
+    "actors": "Liam Neeson, Ralph Fiennes, Ben Kingsley",
+    "language": "English, Hebrew, German, Polish, Latin",
+    "country": "United States",
+    "boxoffice": "$96,898,818",
+    "runtime": "196 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0071562": {
+    "rated": "R",
+    "genre": "Crime, Drama",
+    "director": "Francis Ford Coppola",
+    "actors": "Al Pacino, Robert De Niro, Robert Duvall",
+    "language": "English, Italian, Spanish, Latin, Sicilian",
+    "country": "United States",
+    "boxoffice": "$47,834,595",
+    "runtime": "202 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0050083": {
+    "rated": "Approved",
+    "genre": "Crime, Drama",
+    "director": "Sidney Lumet",
+    "actors": "Henry Fonda, Lee J. Cobb, Martin Balsam",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": "N/A",
+    "runtime": "96 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt15176374": {
+    "rated": "N/A",
+    "genre": "Thriller",
+    "director": "Kabir Lal",
+    "actors": "Parvati Nair, Ganesh Venkatraman, Mahendran",
+    "language": "Tamil",
+    "country": "India",
+    "boxoffice": "N/A",
+    "runtime": "N/A",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0120737": {
+    "rated": "PG-13",
+    "genre": "Adventure, Drama, Fantasy",
+    "director": "Peter Jackson",
+    "actors": "Elijah Wood, Ian McKellen, Orlando Bloom",
+    "language": "English, Sindarin",
+    "country": "New Zealand, United States",
+    "boxoffice": "$325,873,309",
+    "runtime": "178 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt33175825": {
+    "rated": "N/A",
+    "genre": "Animation, Action, Adventure",
+    "director": "Ryota Aikei, Yuichiro Hayashi, Tokio Igarashi",
+    "actors": "Tomás Abalo, Natsuki Hanae, Yoshimasa Hosoya",
+    "language": "Japanese",
+    "country": "Japan",
+    "boxoffice": "$3,638,404",
+    "runtime": "145 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt11989890": {
+    "rated": "PG",
+    "genre": "Documentary, Biography",
+    "director": "Alastair Fothergill, Jonathan Hughes, Keith Scholey",
+    "actors": "David Attenborough, Max Hughes",
+    "language": "English",
+    "country": "United Kingdom",
+    "boxoffice": "N/A",
+    "runtime": "83 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt5275892": {
+    "rated": "TV-MA",
+    "genre": "Documentary, Biography, Crime",
+    "director": "Ezra Edelman",
+    "actors": "Willie Brown, Harry Edwards, John McKay",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": "N/A",
+    "runtime": "467 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt43383343": {
+    "rated": "Not Rated",
+    "genre": "Animation, Fantasy",
+    "director": "Hikaru Murata, Tomohisa Taguchi",
+    "actors": "Fumiko Orikasa, Masakazu Morita, Show Hayami",
+    "language": "Japanese",
+    "country": "Japan",
+    "boxoffice": "N/A",
+    "runtime": "80 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
+  },
+  "tt0075143": {
+    "rated": "PG",
+    "genre": "Adventure, Biography, Drama",
+    "director": "Moustapha Akkad",
+    "actors": "Abdallah Gheith, Mona Wassef, Hamdy Gheith",
+    "language": "Arabic",
+    "country": "Libya, Egypt, Morocco",
+    "boxoffice": "$4,360,000",
+    "runtime": "207 min",
+    "cached_at": "2026-10-31T12:33:06.600117+00:00"
   }
 }
