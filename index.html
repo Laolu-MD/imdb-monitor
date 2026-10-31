@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDb 高分电影监测</title>
+  <style>
+    :root { --bg: #0f1419; --card: #1a2332; --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --good: #3fb950; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; }
+    h1 { margin: 0 0 8px; font-size: 1.6rem; }
+    .subtitle { color: var(--muted); margin-bottom: 16px; }
+    .config { background: var(--card); padding: 12px; border-radius: 8px; margin-bottom: 16px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .config input { flex: 1; min-width: 180px; background: #0d1117; color: var(--text); border: 1px solid #30363d; border-radius: 6px; padding: 8px; }
+    .controls { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
+    input, select, button { background: var(--card); color: var(--text); border: 1px solid #30363d; border-radius: 6px; padding: 8px 12px; font-size: 14px; }
+    button { cursor: pointer; }
+    button:hover { border-color: var(--accent); }
+    .stats { color: var(--muted); font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 8px; overflow: hidden; }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #30363d; font-size: 14px; }
+    th { background: #161b22; }
+    tr:hover { background: #21262d; }
+    .rating { font-weight: 600; color: var(--good); }
+    a { color: var(--accent); text-decoration: none; }
+    .empty { text-align: center; padding: 40px; color: var(--muted); }
+    .msg { font-size: 13px; color: var(--muted); margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <h1>IMDb 高分电影监测</h1>
+  <div class="subtitle">个人记录持久化到仓库 personal.json</div>
+
+  <div class="config">
+    <input id="repo" placeholder="用户名/仓库名 例如 myname/imdb-monitor" />
+    <input id="token" type="password" placeholder="GitHub Personal Access Token (repo 权限)" />
+    <button id="saveConfig">保存配置</button>
+    <button id="loadData">加载数据</button>
+    <span class="msg" id="msg"></span>
+  </div>
+
+  <div class="controls">
+    <input id="search" type="text" placeholder="搜索片名或年份...">
+    <select id="sort">
+      <option value="rating">按评分</option>
+      <option value="votes">按投票</option>
+      <option value="year">按年份</option>
+      <option value="title">按片名</option>
+    </select>
+    <select id="filterWatched">
+      <option value="">全部</option>
+      <option value="yes">已观看</option>
+      <option value="no">未观看</option>
+    </select>
+    <button id="savePersonal">保存个人记录到仓库</button>
+  </div>
+
+  <div id="table-container"></div>
+
+  <script>
+    const CFG_KEY = "imdb-config";
+    let movies = [];
+    let personal = {};
+    let personalSha = "";
+
+    function loadConfig() {
+      const c = JSON.parse(localStorage.getItem(CFG_KEY) || "{}");
+      document.getElementById("repo").value = c.repo || "Laolu-MD/imdb-monitor";
+      document.getElementById("token").value = c.token || "";
+    }
+
+    function saveConfig() {
+      const cfg = {
+        repo: document.getElementById("repo").value.trim(),
+        token: document.getElementById("token").value.trim()
+      };
+      localStorage.setItem(CFG_KEY, JSON.stringify(cfg));
+      setMsg("配置已保存（仅保存在本浏览器）");
+    }
+
+    function getHeaders() {
+      const token = document.getElementById("token").value.trim();
+      const h = { "Accept": "application/vnd.github+json" };
+      if (token) h["Authorization"] = "Bearer " + token;
+      return h;
+    }
+
+    function rawUrl(path) {
+      const repo = document.getElementById("repo").value.trim();
+      return `https://raw.githubusercontent.com/${repo}/main/${path}`;
+    }
+
+    async function loadData() {
+      const repo = document.getElementById("repo").value.trim();
+      if (!repo) return setMsg("请先填写仓库");
+      setMsg("加载中...");
+      try {
+        // 高分清单
+        const res = await fetch(`https://api.github.com/repos/${repo}/contents/latest.csv`, { headers: { ...getHeaders(), "Accept": "application/vnd.github.raw+json" } });
+        if (!res.ok) throw new Error("无法加载 latest.csv");
+        movies = parseCSV(await res.text());
+
+        // 个人记录
+        const pRes = await fetch(`https://api.github.com/repos/${repo}/contents/personal.json`, { headers: getHeaders() });
+        if (pRes.ok) {
+          const data = await pRes.json();
+          personalSha = data.sha;
+          personal = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(data.content.replace(/\n/g, "")), c => c.charCodeAt(0))));
+        } else {
+          personal = {};
+          personalSha = "";
+        }
+        setMsg(`已加载 ${movies.length} 部电影`);
+        render();
+      } catch (e) {
+        setMsg("加载失败: " + e.message);
+      }
+    }
+
+    async function savePersonal() {
+      const repo = document.getElementById("repo").value.trim();
+      const token = document.getElementById("token").value.trim();
+      if (!repo || !token) return setMsg("需要仓库和 Token 才能保存");
+      setMsg("保存中...");
+      try {
+        const content = btoa(unescape(encodeURIComponent(JSON.stringify(personal, null, 2))));
+        const body = {
+          message: "Update personal records",
+          content: content,
+          sha: personalSha || undefined
+        };
+        const res = await fetch(`https://api.github.com/repos/${repo}/contents/personal.json`, {
+          method: "PUT",
+          headers: { ...getHeaders(), "Content-Type": "application/json" },
+          body: JSON.stringify(body)
+        });
+        if (!res.ok) throw new Error(await res.text());
+        const data = await res.json();
+        personalSha = data.content.sha;
+        setMsg("已保存到仓库");
+      } catch (e) {
+        setMsg("保存失败: " + e.message);
+      }
+    }
+
+    function parseCSV(text) {
+      const lines = text.trim().split("\n");
+      const headers = lines[0].split(",").map(h => h.trim());
+      return lines.slice(1).filter(Boolean).map(line => {
+        const vals = line.split(",").map(v => v.trim().replace(/^"|"$/g, ""));
+        const obj = {};
+        headers.forEach((h, i) => obj[h] = vals[i] || "");
+        return obj;
+      });
+    }
+
+    function setMsg(t) { document.getElementById("msg").textContent = t; }
+
+    function getP(id) { return personal[id] || { watched: "", priority: "", notes: "" }; }
+
+    function setP(id, key, value) {
+      if (!personal[id]) personal[id] = {};
+      personal[id][key] = value;
+      render();
+    }
+
+    function render() {
+      const q = document.getElementById("search").value.toLowerCase();
+      const sortBy = document.getElementById("sort").value;
+      const watchedFilter = document.getElementById("filterWatched").value;
+
+      let filtered = movies.filter(m => {
+        const text = (m.title + " " + m.year + " " + m.imdb_id).toLowerCase();
+        if (q && !text.includes(q)) return false;
+        const p = getP(m.imdb_id);
+        if (watchedFilter && p.watched !== watchedFilter) return false;
+        return true;
+      });
+
+      filtered.sort((a, b) => {
+        if (sortBy === "rating") return parseFloat(b.rating) - parseFloat(a.rating);
+        if (sortBy === "votes") return parseInt(b.votes) - parseInt(a.votes);
+        if (sortBy === "year") return (b.year || "0").localeCompare(a.year || "0");
+        return (a.title || "").localeCompare(b.title || "");
+      });
+
+      if (!filtered.length) {
+        document.getElementById("table-container").innerHTML = `<div class="empty">没有数据或没有匹配项</div>`;
+        return;
+      }
+
+      let html = `<table><thead><tr>
+        <th>评分</th><th>片名</th><th>年份</th><th>投票</th><th>类型</th>
+        <th>已观看</th><th>优先级</th><th>备注</th>
+      </tr></thead><tbody>`;
+
+      for (const m of filtered) {
+        const p = getP(m.imdb_id);
+        html += `<tr>
+          <td class="rating">${m.rating || ""}</td>
+          <td><a href="https://www.imdb.com/title/${m.imdb_id}/" target="_blank">${m.title || m.imdb_id}</a></td>
+          <td>${m.year || ""}</td>
+          <td>${m.votes ? Number(m.votes).toLocaleString() : ""}</td>
+          <td>${m.genres || ""}</td>
+          <td>
+            <select onchange="setP('${m.imdb_id}','watched',this.value)">
+              <option value="" ${!p.watched?"selected":""}>-</option>
+              <option value="yes" ${p.watched==="yes"?"selected":""}>是</option>
+              <option value="no" ${p.watched==="no"?"selected":""}>否</option>
+            </select>
+          </td>
+          <td>
+            <select onchange="setP('${m.imdb_id}','priority',this.value)">
+              <option value="">-</option>
+              ${[1,2,3,4,5].map(n => `<option value="${n}" ${p.priority==n?"selected":""}>${n}</option>`).join("")}
+            </select>
+          </td>
+          <td><input value="${p.notes || ""}" onchange="setP('${m.imdb_id}','notes',this.value)" placeholder="备注" style="width:160px"></td>
+        </tr>`;
+      }
+      html += `</tbody></table>`;
+      document.getElementById("table-container").innerHTML = html;
+    }
+
+    document.getElementById("saveConfig").onclick = saveConfig;
+    document.getElementById("loadData").onclick = loadData;
+    document.getElementById("savePersonal").onclick = savePersonal;
+    document.getElementById("search").oninput = render;
+    document.getElementById("sort").onchange = render;
+    document.getElementById("filterWatched").onchange = render;
+
+    loadConfig();
+  </script>
+</body>
+</html>
