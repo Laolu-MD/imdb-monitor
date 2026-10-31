@@ -54,5 +54,170 @@
     "runtime": "152 min",
     "plot": "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
     "cached_at": "2026-10-31T10:39:10.546731+00:00"
+  },
+  "tt38770727": {
+    "rated": "N/A",
+    "genre": "Comedy, Reality-TV",
+    "director": "N/A",
+    "actors": "IShowSpeed",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": "N/A",
+    "runtime": "N/A",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt4283088": {
+    "rated": "TV-MA",
+    "genre": "Action, Adventure, Drama",
+    "director": "Miguel Sapochnik",
+    "actors": "Peter Dinklage, Kit Harington, Emilia Clarke",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": null,
+    "runtime": "60 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt4283094": {
+    "rated": "TV-MA",
+    "genre": "Action, Adventure, Drama",
+    "director": "Miguel Sapochnik",
+    "actors": "Peter Dinklage, Nikolaj Coster-Waldau, Lena Headey",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": null,
+    "runtime": "68 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt2178784": {
+    "rated": "TV-MA",
+    "genre": "Action, Adventure, Drama",
+    "director": "David Nutter",
+    "actors": "Emilia Clarke, Kit Harington, Richard Madden",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": null,
+    "runtime": "51 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt34952922": {
+    "rated": "TV-MA",
+    "genre": "Animation, Action, Adventure",
+    "director": "Sol Choi, Dan Duncan, Shaun O'Neil",
+    "actors": "Steven Yeun, Sandra Oh, J.K. Simmons",
+    "language": "N/A",
+    "country": "N/A",
+    "boxoffice": null,
+    "runtime": "46 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt12187040": {
+    "rated": "TV-14",
+    "genre": "Crime, Drama",
+    "director": "Thomas Schnauz",
+    "actors": "Bob Odenkirk, Jonathan Banks, Rhea Seehorn",
+    "language": "English, Spanish",
+    "country": "United States",
+    "boxoffice": null,
+    "runtime": "50 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt39848784": {
+    "rated": "N/A",
+    "genre": "Animation, Action, Adventure",
+    "director": "N/A",
+    "actors": "N/A",
+    "language": "N/A",
+    "country": "N/A",
+    "boxoffice": null,
+    "runtime": "N/A",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt8084176": {
+    "rated": "TV-MA",
+    "genre": "Crime, Drama, Thriller",
+    "director": "Sam Esmail",
+    "actors": "Rami Malek, Elliot Villar, Christian Slater",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": null,
+    "runtime": "56 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt11294360": {
+    "rated": "TV-MA",
+    "genre": "Animation, Action, Adventure",
+    "director": "N/A",
+    "actors": "Yûto Uemura, Kenshô Ono, Naoya Uchida",
+    "language": "Japanese",
+    "country": "Japan",
+    "boxoffice": null,
+    "runtime": "24 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt11028174": {
+    "rated": "TV-MA",
+    "genre": "Animation, Comedy, Drama",
+    "director": "Amy Winfrey",
+    "actors": "Will Arnett, Amy Sedaris, Alison Brie",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": null,
+    "runtime": "26 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt1204265": {
+    "rated": "TV-Y7",
+    "genre": "Animation, Action, Adventure",
+    "director": "Joaquim Dos Santos",
+    "actors": "Zach Tyler Eisen, Mae Whitman, Jack De Sena",
+    "language": "English",
+    "country": "United States, South Korea",
+    "boxoffice": null,
+    "runtime": "21 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt9313978": {
+    "rated": "TV-PG",
+    "genre": "Animation, Action, Adventure",
+    "director": "Dave Filoni, Nathaniel Villanueva",
+    "actors": "Ashley Eckstein, Dave Filoni, Dee Bradley Baker",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": null,
+    "runtime": "23 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt1310121": {
+    "rated": "TV-14",
+    "genre": "Animation, Action, Drama",
+    "director": "Gorô Taniguchi, Yoshimitsu Ôhashi",
+    "actors": "Johnny Yong Bosch, Jun Fukuyama, Yuri Lowenthal",
+    "language": "N/A",
+    "country": "N/A",
+    "boxoffice": null,
+    "runtime": "24 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt3748420": {
+    "rated": "TV-MA",
+    "genre": "Animation, Action, Adventure",
+    "director": "Hiroshi Kôjina, Masaki Matsumura",
+    "actors": "Megumi Han, Mariya Ise, Kikuko Inoue",
+    "language": "Japanese",
+    "country": "Japan",
+    "boxoffice": null,
+    "runtime": "23 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
+  },
+  "tt3673600": {
+    "rated": "TV-14",
+    "genre": "Animation, Action, Adventure",
+    "director": "Hiroshi Kôjina, Migmi",
+    "actors": "Banjô Ginga, Kôki Uchiyama, Takashi Matsuyama",
+    "language": "Japanese",
+    "country": "Japan",
+    "boxoffice": null,
+    "runtime": "23 min",
+    "cached_at": "2026-10-31T10:55:56.664623+00:00"
   }
 }

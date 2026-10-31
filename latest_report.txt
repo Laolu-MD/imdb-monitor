@@ -1,12 +1,61 @@
-IMDb Rating Monitor Report
-Generated: 2026-10-31 10:39 UTC
-Watchlist size: 4
-Changes detected: 0
+IMDb High Score Monitor Report
+Date: 2026-10-31
+Filter: rating >= 8.0, votes >= 10000
+Total high-score movies: 3767
+New: 3767
+Changed: 0
+Dropped: 0
 
-No rating changes detected.
+=== Top 20 Current High Score ===
+10.0   ()  [tt38770727]  votes=27,005
+9.9   ()  [tt4283088]  votes=316,190
+9.9   ()  [tt4283094]  votes=234,125
+9.9   ()  [tt2178784]  votes=188,953
+9.9   ()  [tt34952922]  votes=100,987
+9.9   ()  [tt12187040]  votes=90,458
+9.9   ()  [tt39848784]  votes=53,246
+9.9   ()  [tt8084176]  votes=49,175
+9.9   ()  [tt11294360]  votes=46,317
+9.9   ()  [tt11028174]  votes=34,943
+9.9   ()  [tt1204265]  votes=29,807
+9.9   ()  [tt9313978]  votes=25,670
+9.9   ()  [tt1310121]  votes=23,148
+9.9   ()  [tt3748420]  votes=22,026
+9.9   ()  [tt3673600]  votes=20,253
+9.9   ()  [tt0701989]  votes=20,211
+9.9   ()  [tt3827236]  votes=15,601
+9.8   ()  [tt2301455]  votes=298,893
+9.8   ()  [tt9906260]  votes=172,517
+9.8   ()  [tt1683088]  votes=162,138
 
-=== Current Status (top priority) ===
-The Shawshank Redemption (tt0111161)  rating=9.3  priority=5  watched=yes  in_library=yes  country=United States  genre=Drama
-Interstellar (tt0816692)  rating=8.7  priority=5  watched=no  in_library=no  country=United States, United Kingdom, Canada  genre=Adventure, Sci-Fi
-Inception (tt1375666)  rating=8.8  priority=4  watched=no  in_library=no  country=United Kingdom, United States  genre=Adventure, Sci-Fi, Thriller
-The Dark Knight (tt0468569)  rating=9.1  priority=4  watched=yes  in_library=yes  country=United States, United Kingdom  genre=Crime, Thriller
+=== Changes ===
+NEW     10.0   ()  [tt38770727]
+NEW     9.9   ()  [tt4283088]
+NEW     9.9   ()  [tt4283094]
+NEW     9.9   ()  [tt2178784]
+NEW     9.9   ()  [tt34952922]
+NEW     9.9   ()  [tt12187040]
+NEW     9.9   ()  [tt39848784]
+NEW     9.9   ()  [tt8084176]
+NEW     9.9   ()  [tt11294360]
+NEW     9.9   ()  [tt11028174]
+NEW     9.9   ()  [tt1204265]
+NEW     9.9   ()  [tt9313978]
+NEW     9.9   ()  [tt1310121]
+NEW     9.9   ()  [tt3748420]
+NEW     9.9   ()  [tt3673600]
+NEW     9.9   ()  [tt0701989]
+NEW     9.9   ()  [tt3827236]
+NEW     9.8   ()  [tt2301455]
+NEW     9.8   ()  [tt9906260]
+NEW     9.8   ()  [tt1683088]
+NEW     9.8   ()  [tt3866850]
+NEW     9.8   ()  [tt13857684]
+NEW     9.8   ()  [tt9898836]
+NEW     9.8   ()  [tt17505964]
+NEW     9.8   ()  [tt13605714]
+NEW     9.8   ()  [tt13819632]
+NEW     9.8   ()  [tt17594170]
+NEW     9.8   ()  [tt17277218]
+NEW     9.8   ()  [tt10023374]
+NEW     9.8   ()  [tt19811660]
