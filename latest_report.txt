@@ -1,0 +1,12 @@
+IMDb Rating Monitor Report
+Generated: 2026-10-31 10:30 UTC
+Watchlist size: 4
+Changes detected: 0
+
+No rating changes detected.
+
+=== Current Status (top priority) ===
+The Shawshank Redemption (tt0111161)  rating=9.3  priority=5  watched=yes  in_library=yes  country=  genre=
+Interstellar (tt0816692)  rating=8.7  priority=5  watched=no  in_library=no  country=  genre=
+Inception (tt1375666)  rating=8.8  priority=4  watched=no  in_library=no  country=  genre=
+The Dark Knight (tt0468569)  rating=9.1  priority=4  watched=yes  in_library=yes  country=  genre=
