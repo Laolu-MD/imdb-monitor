@@ -1,1 +1,58 @@
-{}
+{
+  "tt0111161": {
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "rated": "R",
+    "genre": "Drama",
+    "director": "Frank Darabont",
+    "actors": "Tim Robbins, Morgan Freeman, Bob Gunton",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": "$28,767,189",
+    "runtime": "142 min",
+    "plot": "After a banker is sentenced to life in Shawshank Prison, he forms an unlikely friendship with a seasoned inmate and clings to hope amid cruelty and corruption.",
+    "cached_at": "2026-10-31T10:39:10.546731+00:00"
+  },
+  "tt1375666": {
+    "title": "Inception",
+    "year": "2010",
+    "rated": "PG-13",
+    "genre": "Adventure, Sci-Fi, Thriller",
+    "director": "Christopher Nolan",
+    "actors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
+    "language": "English, Japanese, French",
+    "country": "United Kingdom, United States",
+    "boxoffice": "$292,587,330",
+    "runtime": "148 min",
+    "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO, but his tragic past may doom the project and his team to disaster.",
+    "cached_at": "2026-10-31T10:39:10.546731+00:00"
+  },
+  "tt0816692": {
+    "title": "Interstellar",
+    "year": "2014",
+    "rated": "PG-13",
+    "genre": "Adventure, Sci-Fi",
+    "director": "Christopher Nolan",
+    "actors": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+    "language": "English",
+    "country": "United States, United Kingdom, Canada",
+    "boxoffice": "$203,227,580",
+    "runtime": "169 min",
+    "plot": "In a dystopian future where Earth has become near-uninhabitable, a team of astronauts embark on a mission to find a new home for humanity.",
+    "cached_at": "2026-10-31T10:39:10.546731+00:00"
+  },
+  "tt0468569": {
+    "title": "The Dark Knight",
+    "year": "2008",
+    "rated": "PG-13",
+    "genre": "Crime, Thriller",
+    "director": "Christopher Nolan",
+    "actors": "Christian Bale, Heath Ledger, Aaron Eckhart",
+    "language": "English, Mandarin",
+    "country": "United States, United Kingdom",
+    "boxoffice": "$534,987,076",
+    "runtime": "152 min",
+    "plot": "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
+    "cached_at": "2026-10-31T10:39:10.546731+00:00"
+  }
+}
