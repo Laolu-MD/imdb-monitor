@@ -41,7 +41,7 @@ def download(url: str, dest: Path):
 def load_gzip_tsv(path: Path):
     with gzip.open(path, "rt", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")
-        return list(reader)
+        yield from reader
 
 def load_json(path: Path):
     if not path.exists():
@@ -109,7 +109,9 @@ def main():
             continue
         if rating >= MIN_RATING and votes >= MIN_VOTES:
             tconst = r["tconst"]
-            basic = basics.get(tconst, {})
+            basic = basics.get(tconst)
+            if not basic:
+                continue
             high_score.append({
                 "imdb_id": tconst,
                 "title": basic.get("primaryTitle", ""),
