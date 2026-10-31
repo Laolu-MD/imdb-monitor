@@ -29,10 +29,10 @@ jobs:
       - name: Run monitor
         env:
           OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
-          MIN_RATING: "8.0"
+          MIN_RATING: "7.0"
           MIN_VOTES: "10000"
           MAX_OMDB_PER_RUN: "15"
-        run: python monitor.py
+        run: python -u monitor.py
 
       - name: Commit results
         run: |
@@ -41,4 +41,3 @@ jobs:
           git add history/ rating_changes.csv latest_report.txt latest.csv metadata_cache.json || true
           git diff --staged --quiet || git commit -m "Update high-score list ${{ github.run_id }} [skip ci]"
           git push
-        continue-on-error: true
