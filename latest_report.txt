@@ -1,43 +1,34 @@
 IMDb High Score Monitor Report
-Date: 2026-11-02
+Date: 2026-11-03
 Filter: rating >= 7.0, votes >= 10000
-Total high-score movies: 4961
-New: 3
-Changed: 9
+Total high-score movies: 4963
+New: 2
+Changed: 1
 Dropped: 0
 
 === Top 20 Current High Score ===
-9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,260,480
-9.2  The Godfather (1972)  [tt0068646]  votes=2,269,857
-9.1  The Dark Knight (2008)  [tt0468569]  votes=3,246,274
-9.1  The Chaos Class (1975)  [tt0252487]  votes=46,948
-9.1  You Can See Everything (2026)  [tt45368240]  votes=23,554
-9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,271
-9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,205,395
-9.0  Schindler's List (1993)  [tt0108052]  votes=1,611,898
-9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,522,291
-9.0  12 Angry Men (1957)  [tt0050083]  votes=1,010,426
-9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,055
-8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,249,549
-8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=39,956
-8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,519
-8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,275
-8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,211
-8.9  The Message (1976)  [tt0075143]  votes=12,233
-8.9  Kireedam (1989)  [tt0237376]  votes=10,014
-8.8  Inception (2010)  [tt1375666]  votes=2,885,675
-8.8  Fight Club (1999)  [tt0137523]  votes=2,679,431
+9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,260,880
+9.2  The Godfather (1972)  [tt0068646]  votes=2,270,118
+9.1  The Dark Knight (2008)  [tt0468569]  votes=3,246,443
+9.1  The Chaos Class (1975)  [tt0252487]  votes=46,953
+9.1  You Can See Everything (2026)  [tt45368240]  votes=24,693
+9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,274
+9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,205,614
+9.0  Schindler's List (1993)  [tt0108052]  votes=1,612,054
+9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,522,472
+9.0  12 Angry Men (1957)  [tt0050083]  votes=1,010,566
+9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,056
+8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,249,800
+8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=40,026
+8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,522
+8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,276
+8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,234
+8.9  The Message (1976)  [tt0075143]  votes=12,235
+8.9  Kireedam (1989)  [tt0237376]  votes=10,017
+8.8  Inception (2010)  [tt1375666]  votes=2,886,000
+8.8  Fight Club (1999)  [tt0137523]  votes=2,679,837
 
 === Changes ===
-CHANGE  9.2 → 9.1 (-0.1)  You Can See Everything  [tt45368240]
-CHANGE  9.0 → 8.9 (-0.1)  BLEACH: Thousand-Year Blood War - The Calamity  [tt43383343]
-CHANGE  8.2 → 8.1 (-0.1)  Tourist Family  [tt34915705]
-CHANGE  7.7 → 7.8 (+0.1)  Dragon Ball Super: Broly  [tt7961060]
-CHANGE  7.3 → 7.4 (+0.1)  Let the Bullets Fly  [tt1533117]
-CHANGE  7.4 → 7.3 (-0.1)  The Sheep Detectives  [tt32565993]
-CHANGE  7.4 → 7.3 (-0.1)  Gadar: Ek Prem Katha  [tt0284137]
-CHANGE  7.2 → 7.1 (-0.1)  Toilet: A Love Story  [tt5785170]
-CHANGE  7.1 → 7.0 (-0.1)  Talk to Me  [tt10638522]
-NEW     8.1  La bola negra (2026)  [tt35511966]
-NEW     7.6  Lone Wolf and Cub: Sword of Vengeance (1972)  [tt0068815]
-NEW     7.0  Fatal Attraction (1987)  [tt0093010]
+CHANGE  7.2 → 7.1 (-0.1)  They Were Expendable  [tt0038160]
+NEW     8.7  Baththa (2026)  [tt44090278]
+NEW     7.8  Batman: Knightfall - Part 1: Knightfall (2026)  [tt32333324]
