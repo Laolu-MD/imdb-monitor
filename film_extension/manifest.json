@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "电影清单资源助手",
+  "version": "1.0.0",
+  "description": "在电影清单中查询 SeedHub 资源并获取磁力链接。",
+  "permissions": [],
+  "host_permissions": [
+    "https://www.seedhub.cc/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://laolu-md.github.io/imdb-monitor/*"
+      ],
+      "js": [
+        "bridge.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
