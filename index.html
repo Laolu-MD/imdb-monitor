@@ -31,7 +31,7 @@ async function seedCall(action,value){
  let data=await r.json();if(!r.ok)throw Error((data.error||'查询失败')+'；请安装浏览器助手后重试');return data;
 }
 $('seedSearch').onclick=async()=>{
- let name=$('seedQuery').value.trim();if(!name)return;let chosen=movies.find(m=>m.title.toLowerCase()===name.toLowerCase());if(chosen&&!/[\u4e00-\u9fff]/.test(name)){try{$('seedStatus').textContent='正在查找中文片名…';let names=await chineseTitles([chosen.imdb_id]);if(names[chosen.imdb_id])name=names[chosen.imdb_id]}catch(e){$('seedStatus').textContent='中文片名查询失败：'+e.message;return}}
+ let name=$('seedQuery').value.trim();if(!name)return;let chosen=movies.find(m=>m.title.toLowerCase()===name.toLowerCase());if(chosen&&!/[\u4e00-\u9fff]/.test(name)){try{$('seedStatus').textContent='正在查找中文片名…';let names=await chineseTitles([chosen.imdb_id]);if(chineseTitles.failed.includes(chosen.imdb_id))throw Error('中文片名服务未响应，请重试');if(names[chosen.imdb_id])name=names[chosen.imdb_id]}catch(e){$('seedStatus').textContent='中文片名查询失败：'+e.message;return}}
  $('seedStatus').textContent='正在查询…';$('seedVersions').innerHTML='';
  try{
   seedCandidates=(await seedCall('search',name)).items||[];
@@ -59,15 +59,16 @@ async function getSeedMagnet(i){
 }
 
 function chineseSubtitle(title){return !/(无字|无字幕|无中文(?:字幕|字)|不含中文(?:字幕|字)|no[ ._-]?sub)/i.test(title)&&/(中文字幕|中文内封|中字|中英(?:双语|双字|字幕)|简繁(?:英)?(?:字幕|双语)|简体字幕|繁体字幕|简中字幕|繁中字幕|(?:^|[. _\[\]-])CHS(?:[. _\[\]-]|$)|(?:^|[. _\[\]-])CHT(?:[. _\[\]-]|$))/i.test(title)}
-async function chineseTitles(imdbIds){
- let out={};for(let offset=0;offset<imdbIds.length;offset+=25){
-  let ids=imdbIds.slice(offset,offset+25).filter(x=>/^tt\d+$/.test(x));if(!ids.length)continue;
-  let sparql='SELECT ?id ?label WHERE { VALUES ?id { '+ids.map(x=>JSON.stringify(x)).join(' ')+' } ?item wdt:P345 ?id; rdfs:label ?label. FILTER(LANG(?label) IN ("zh","zh-hans","zh-cn","zh-hant","zh-tw")) }';
-  let url='https://query.wikidata.org/sparql?format=json&query='+encodeURIComponent(sparql);
-  let resp=await fetch(url,{headers:{Accept:'application/sparql-results+json'},signal:AbortSignal.timeout(25000)});
-  if(!resp.ok)throw Error('中文片名服务返回 '+resp.status);
-  let data=await resp.json();for(let item of data.results?.bindings||[]){let id=item.id?.value,label=item.label?.value;if(id&&label&&/[\u4e00-\u9fff]/.test(label)&&!out[id])out[id]=label}
- }return out
+async function chineseTitles(imdbIds,onProgress=()=>{}){
+ let out={},failed=[];const ids=[...new Set(imdbIds)].filter(x=>/^tt\d+$/.test(x));
+ async function one(id){try{
+  let query='SELECT ?label WHERE { ?item wdt:P345 '+JSON.stringify(id)+'; rdfs:label ?label. FILTER(LANG(?label) IN ("zh","zh-hans","zh-cn","zh-hant","zh-tw")) } LIMIT 5';
+  let resp=await fetch('https://query.wikidata.org/sparql?format=json&query='+encodeURIComponent(query),{headers:{Accept:'application/sparql-results+json'},signal:AbortSignal.timeout(15000)});
+  if(!resp.ok)throw Error('HTTP '+resp.status);
+  let data=await resp.json(),label=(data.results?.bindings||[]).map(x=>x.label?.value).find(x=>x&&/[\u4e00-\u9fff]/.test(x));if(label)out[id]=label;
+ }catch(e){failed.push(id)}}
+ for(let i=0;i<ids.length;i+=3){onProgress(Math.min(i+3,ids.length),ids.length);await Promise.all(ids.slice(i,i+3).map(one))}
+ chineseTitles.failed=failed;return out
 }
 let batchVersions=[];
 $('searchWatchlist').onclick=async()=>{
@@ -75,10 +76,10 @@ $('searchWatchlist').onclick=async()=>{
  let button=$('searchWatchlist');button.disabled=true;$('batchResults').innerHTML='';batchVersions=[];
  try{
   $('seedStatus').textContent='正在根据 IMDb 编号查找中文片名…';
-  let titles=await chineseTitles(selected.map(m=>m.imdb_id)),html='',found=0,missing=0,failed=0;
+  let titles=await chineseTitles(selected.map(m=>m.imdb_id),(n,total)=>{$('seedStatus').textContent='正在查找中文片名 '+n+' / '+total}),html='',found=0,missing=0,failed=0;
   for(let i=0;i<selected.length;i++){
    let movie=selected[i],name=titles[movie.imdb_id];$('seedStatus').textContent='正在搜索 '+(i+1)+' / '+selected.length+'：'+movie.title;
-   if(!name){missing++;html+='<p>'+esc(movie.title)+'：未找到中文片名</p>';continue}
+   if(!name){if(chineseTitles.failed.includes(movie.imdb_id)){failed++;html+='<p>'+esc(movie.title)+'：中文片名查询失败，请重试</p>'}else{missing++;html+='<p>'+esc(movie.title)+'：未找到中文片名</p>'}continue}
    html+='<h3>'+esc(name)+' / '+esc(movie.title)+' ('+esc(movie.year)+')</h3>';
    try{
     let matches=(await seedCall('search',name)).items||[];
