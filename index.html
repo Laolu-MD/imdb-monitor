@@ -88,14 +88,16 @@ $('searchWatchlist').onclick=async()=>{
      html+='<p><a target="_blank" rel="noopener noreferrer" href="https://www.seedhub.cc'+esc(candidate.path)+'">'+esc(candidate.title)+'（核对年份）</a></p>';
      let versions=(await seedCall('versions',candidate.path)).items||[],subtitles=versions.filter(x=>chineseSubtitle(x.title));
      if(!subtitles.length){html+='<p class="muted">未找到标题中明确标注中文字幕的版本</p>';continue}
-     for(let v of subtitles){let j=batchVersions.push(v)-1;found++;html+='<p>'+esc(v.title)+' <button type="button" data-batch-version="'+j+'">加入磁力清单</button></p>'}
+     for(let v of subtitles){let j=batchVersions.push(v)-1;found++;html+='<p><label><input type="checkbox" data-batch-select="'+j+'"> '+esc(v.title)+'</label> <button type="button" data-batch-version="'+j+'">加入磁力清单</button></p>'}
      await new Promise(r=>setTimeout(r,300))
     }
    }catch(e){failed++;html+='<p>查询失败：'+esc(e.message)+'</p>'}
    $('batchResults').innerHTML=html;
    await new Promise(r=>setTimeout(r,350));
   }
-  $('batchResults').innerHTML=html;
+  $('batchResults').innerHTML=(found?'<div class="grid"><label><input type="checkbox" id="batchSelectAll"> 全选结果</label><button type="button" id="batchAddSelected">批量加入已选磁力</button></div><p class="muted">字幕依据资源标题标注，请先核对影片和字幕。</p>':'')+html;
+  if(found){$('batchSelectAll').onchange=e=>$('batchResults').querySelectorAll('[data-batch-select]').forEach(x=>x.checked=e.target.checked);
+  $('batchAddSelected').onclick=async()=>{let picked=[...$('batchResults').querySelectorAll('[data-batch-select]:checked')];if(!picked.length){$('seedStatus').textContent='请先选择资源版本';return}let button=$('batchAddSelected'),added=0,failed=0;button.disabled=true;try{for(let i=0;i<picked.length;i++){$('seedStatus').textContent='正在获取磁力 '+(i+1)+' / '+picked.length;try{let data=await seedCall('magnet',batchVersions[+picked[i].dataset.batchSelect].path),id=magnetId(data.magnet);if(!id)throw Error('格式无效');if(!magnetQueue.some(x=>magnetId(x)===id)){magnetQueue.push(data.magnet);added++}}catch(e){failed++}await new Promise(r=>setTimeout(r,300))}persistMagnets();$('seedStatus').textContent='已加入 '+added+' 条；获取失败 '+failed+' 条。'}finally{button.disabled=false}}}
   $('batchResults').querySelectorAll('[data-batch-version]').forEach(b=>b.onclick=async()=>{try{let data=await seedCall('magnet',batchVersions[+b.dataset.batchVersion].path),id=magnetId(data.magnet);if(!id)throw Error('磁力链接格式无效');if(!magnetQueue.some(x=>magnetId(x)===id)){magnetQueue.push(data.magnet);persistMagnets();$('seedStatus').textContent='已加入磁力清单'}else $('seedStatus').textContent='链接已在清单中'}catch(e){$('seedStatus').textContent=e.message}});
   $('seedStatus').textContent='完成：'+found+' 个标注中文字幕的版本；'+missing+' 部缺少中文片名；'+failed+' 部查询失败。请核对影片年份和字幕。';
  }catch(e){$('seedStatus').textContent='批量查询失败：'+e.message}finally{button.disabled=false}
