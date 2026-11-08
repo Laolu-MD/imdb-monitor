@@ -1,38 +1,41 @@
 IMDb High Score Monitor Report
-Date: 2026-11-07
+Date: 2026-11-08
 Filter: rating >= 7.0, votes >= 10000
-Total high-score movies: 4967
-New: 2
-Changed: 5
-Dropped: 0
+Total high-score movies: 4966
+New: 0
+Changed: 9
+Dropped: 1
 
 === Top 20 Current High Score ===
-9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,262,100
-9.2  The Godfather (1972)  [tt0068646]  votes=2,270,851
-9.1  The Dark Knight (2008)  [tt0468569]  votes=3,247,770
-9.1  The Chaos Class (1975)  [tt0252487]  votes=46,964
-9.1  You Can See Everything (2026)  [tt45368240]  votes=27,437
-9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,428
-9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,206,323
-9.0  Schindler's List (1993)  [tt0108052]  votes=1,612,510
-9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,522,921
-9.0  12 Angry Men (1957)  [tt0050083]  votes=1,011,014
-9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,055
-8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,250,547
-8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=40,233
-8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,528
-8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,284
-8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,284
-8.9  The Message (1976)  [tt0075143]  votes=12,239
-8.9  Kireedam (1989)  [tt0237376]  votes=10,025
-8.8  Inception (2010)  [tt1375666]  votes=2,887,050
-8.8  Fight Club (1999)  [tt0137523]  votes=2,681,029
+9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,262,486
+9.2  The Godfather (1972)  [tt0068646]  votes=2,271,065
+9.1  The Dark Knight (2008)  [tt0468569]  votes=3,248,332
+9.1  The Chaos Class (1975)  [tt0252487]  votes=46,971
+9.1  You Can See Everything (2026)  [tt45368240]  votes=28,267
+9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,450
+9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,206,532
+9.0  Schindler's List (1993)  [tt0108052]  votes=1,612,671
+9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,523,072
+9.0  12 Angry Men (1957)  [tt0050083]  votes=1,011,136
+9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,057
+8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,250,787
+8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=40,286
+8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,530
+8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,286
+8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,291
+8.9  The Message (1976)  [tt0075143]  votes=12,243
+8.8  Inception (2010)  [tt1375666]  votes=2,887,368
+8.8  Fight Club (1999)  [tt0137523]  votes=2,681,382
+8.8  Forrest Gump (1994)  [tt0109830]  votes=2,551,652
 
 === Changes ===
-CHANGE  8.4 → 8.3 (-0.1)  The Legend of Maula Jatt  [tt4139928]
-CHANGE  8.0 → 7.9 (-0.1)  Ask Your Heart  [tt1592303]
-CHANGE  7.7 → 7.6 (-0.1)  Nirvanna the Band the Show the Movie  [tt35522483]
-CHANGE  7.6 → 7.5 (-0.1)  The Passion of Anna  [tt0064793]
-CHANGE  7.2 → 7.3 (+0.1)  Snowden  [tt3774114]
-NEW     8.6  Ramayana: Rise of a Legend (2026)  [tt27988879]
-NEW     7.2  Sense and Sensibility (2026)  [tt13609648]
+CHANGE  8.9 → 8.8 (-0.1)  Kireedam  [tt0237376]
+CHANGE  8.6 → 8.5 (-0.1)  Ramayana: Rise of a Legend  [tt27988879]
+CHANGE  8.3 → 8.4 (+0.1)  The Legend of Maula Jatt  [tt4139928]
+CHANGE  8.0 → 7.9 (-0.1)  Mandaadi  [tt36596965]
+CHANGE  7.6 → 7.7 (+0.1)  Godzilla Minus One  [tt23289160]
+CHANGE  7.8 → 7.7 (-0.1)  My Hero Academia: Heroes Rising  [tt11107074]
+CHANGE  7.6 → 7.5 (-0.1)  My Life as a Dog  [tt0089606]
+CHANGE  7.3 → 7.2 (-0.1)  Snowden  [tt3774114]
+CHANGE  7.3 → 7.2 (-0.1)  The Collector  [tt0061495]
+DROPPED 7.0  Slacker  [tt0102943]
