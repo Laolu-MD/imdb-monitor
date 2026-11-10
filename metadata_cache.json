@@ -54834,5 +54834,16 @@
     "boxoffice": "N/A",
     "runtime": "105 min",
     "cached_at": "2026-11-09T23:01:50.102133+00:00"
+  },
+  "tt0079826": {
+    "rated": "R",
+    "genre": "Drama, Music, Romance",
+    "director": "Mark Rydell",
+    "actors": "Bette Midler, Alan Bates, Frederic Forrest",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": "$29,174,648",
+    "runtime": "125 min",
+    "cached_at": "2026-11-10T20:29:34.968995+00:00"
   }
 }
