@@ -54900,5 +54900,27 @@
     "boxoffice": "N/A",
     "runtime": "N/A",
     "cached_at": "2026-11-13T20:30:56.542136+00:00"
+  },
+  "tt38773219": {
+    "rated": "N/A",
+    "genre": "Fantasy",
+    "director": "Ti West",
+    "actors": "Johnny Depp, Sam Claflin, Daisy Ridley",
+    "language": "N/A",
+    "country": "N/A",
+    "boxoffice": "N/A",
+    "runtime": "N/A",
+    "cached_at": "2026-11-20T21:15:15.567887+00:00"
+  },
+  "tt0041498": {
+    "rated": "Approved",
+    "genre": "Comedy, Romance, War",
+    "director": "Howard Hawks",
+    "actors": "Cary Grant, Ann Sheridan, Marion Marshall",
+    "language": "English, German, French",
+    "country": "United States",
+    "boxoffice": "N/A",
+    "runtime": "105 min",
+    "cached_at": "2026-11-20T21:15:15.567887+00:00"
   }
 }
