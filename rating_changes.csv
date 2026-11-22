@@ -13820,3 +13820,8 @@ date,imdb_id,title,change_type,rating,votes,delta,old_rating
 2026-11-21,tt34965515,Mr. Nobody Against Putin,CHANGED,7.3,13774,-0.1,7.4
 2026-11-21,tt0117008,Matilda,CHANGED,7.1,200867,+0.1,7.0
 2026-11-21,tt37809949,Dulhaniya Le Aaeegi,CHANGED,7.0,10633,-0.3,7.3
+2026-11-22,tt38651971,Gondhal,CHANGED,8.3,10411,-0.1,8.4
+2026-11-22,tt32558705,The Hunger Games: Sunrise on the Reaping,NEW,7.6,13672,,
+2026-11-22,tt5278596,Weiner,CHANGED,7.5,10906,-0.1,7.6
+2026-11-22,tt37971394,Blast,CHANGED,7.2,18142,-0.1,7.3
+2026-11-22,tt37809949,Dulhaniya Le Aaeegi,DROPPED,,,,7.0
