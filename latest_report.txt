@@ -3,34 +3,36 @@ Date: 2026-11-24
 Filter: rating >= 7.0, votes >= 10000
 Total high-score movies: 4976
 New: 0
-Changed: 5
+Changed: 7
 Dropped: 0
 
 === Top 20 Current High Score ===
-9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,267,483
-9.2  The Godfather (1972)  [tt0068646]  votes=2,274,014
-9.1  The Dark Knight (2008)  [tt0468569]  votes=3,253,223
-9.1  The Chaos Class (1975)  [tt0252487]  votes=47,033
-9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,729
-9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,209,578
-9.0  Schindler's List (1993)  [tt0108052]  votes=1,614,626
-9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,525,030
-9.0  12 Angry Men (1957)  [tt0050083]  votes=1,013,111
-9.0  You Can See Everything (2026)  [tt45368240]  votes=42,246
-9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,063
-8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,254,303
-8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=41,100
-8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,567
-8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,310
-8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,375
-8.9  The Message (1976)  [tt0075143]  votes=12,260
-8.8  Inception (2010)  [tt1375666]  votes=2,892,175
-8.8  Fight Club (1999)  [tt0137523]  votes=2,686,229
-8.8  Forrest Gump (1994)  [tt0109830]  votes=2,555,151
+9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,267,800
+9.2  The Godfather (1972)  [tt0068646]  votes=2,274,199
+9.1  The Dark Knight (2008)  [tt0468569]  votes=3,253,541
+9.1  The Chaos Class (1975)  [tt0252487]  votes=47,038
+9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,738
+9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,209,787
+9.0  Schindler's List (1993)  [tt0108052]  votes=1,614,772
+9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,525,165
+9.0  12 Angry Men (1957)  [tt0050083]  votes=1,013,230
+9.0  You Can See Everything (2026)  [tt45368240]  votes=43,846
+9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,064
+8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,254,539
+8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=41,147
+8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,571
+8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,311
+8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,377
+8.9  The Message (1976)  [tt0075143]  votes=12,261
+8.8  Inception (2010)  [tt1375666]  votes=2,892,496
+8.8  Fight Club (1999)  [tt0137523]  votes=2,686,520
+8.8  Forrest Gump (1994)  [tt0109830]  votes=2,555,383
 
 === Changes ===
 CHANGE  7.9 → 7.8 (-0.1)  Godzilla Minus Zero  [tt34384661]
 CHANGE  7.7 → 7.8 (+0.1)  My Hero Academia: Heroes Rising  [tt11107074]
+CHANGE  7.6 → 7.5 (-0.1)  The Hunger Games: Sunrise on the Reaping  [tt32558705]
 CHANGE  7.5 → 7.4 (-0.1)  Ohh My Dog  [tt36626888]
 CHANGE  7.4 → 7.3 (-0.1)  To Catch a Thief  [tt0048728]
 CHANGE  7.2 → 7.3 (+0.1)  Blast  [tt37971394]
+CHANGE  7.4 → 7.3 (-0.1)  Let the Bullets Fly  [tt1533117]
