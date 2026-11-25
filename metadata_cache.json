@@ -54933,5 +54933,27 @@
     "boxoffice": "N/A",
     "runtime": "150 min",
     "cached_at": "2026-11-22T20:23:39.082576+00:00"
+  },
+  "tt11995650": {
+    "rated": "N/A",
+    "genre": "Biography, Drama",
+    "director": "Peter Farrelly",
+    "actors": "AnnaSophia Robb, Toby Kebbell, Matt Dillon",
+    "language": "English",
+    "country": "United States",
+    "boxoffice": "N/A",
+    "runtime": "N/A",
+    "cached_at": "2026-11-25T22:36:29.703799+00:00"
+  },
+  "tt0074252": {
+    "rated": "Not Rated",
+    "genre": "Comedy, Drama",
+    "director": "Ettore Scola",
+    "actors": "Francesco Anniballi, Maria Bosco, Giselda Castrini",
+    "language": "Italian",
+    "country": "Italy",
+    "boxoffice": "$7,144",
+    "runtime": "115 min",
+    "cached_at": "2026-11-25T22:36:29.703799+00:00"
   }
 }
