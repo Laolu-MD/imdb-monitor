@@ -1,35 +1,40 @@
 IMDb High Score Monitor Report
-Date: 2026-11-25
+Date: 2026-11-26
 Filter: rating >= 7.0, votes >= 10000
-Total high-score movies: 4978
-New: 2
-Changed: 2
+Total high-score movies: 4981
+New: 3
+Changed: 6
 Dropped: 0
 
 === Top 20 Current High Score ===
-9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,268,052
-9.2  The Godfather (1972)  [tt0068646]  votes=2,274,361
-9.1  The Dark Knight (2008)  [tt0468569]  votes=3,253,799
-9.1  The Chaos Class (1975)  [tt0252487]  votes=47,040
-9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,742
-9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,209,943
-9.0  Schindler's List (1993)  [tt0108052]  votes=1,614,860
-9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,525,276
-9.0  12 Angry Men (1957)  [tt0050083]  votes=1,013,287
-9.0  You Can See Everything (2026)  [tt45368240]  votes=45,126
+9.3  The Shawshank Redemption (1994)  [tt0111161]  votes=3,268,305
+9.2  The Godfather (1972)  [tt0068646]  votes=2,274,546
+9.1  The Dark Knight (2008)  [tt0468569]  votes=3,254,074
+9.1  The Chaos Class (1975)  [tt0252487]  votes=47,042
+9.1  Ramayana: The Legend of Prince Rama (1993)  [tt0259534]  votes=18,750
+9.0  The Lord of the Rings: The Return of the King (2003)  [tt0167260]  votes=2,210,120
+9.0  Schindler's List (1993)  [tt0108052]  votes=1,614,964
+9.0  The Godfather Part II (1974)  [tt0071562]  votes=1,525,399
+9.0  12 Angry Men (1957)  [tt0050083]  votes=1,013,413
 9.0  Unpaarvayil (2025)  [tt15176374]  votes=10,064
-8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,254,734
-8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=41,194
-8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,570
-8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,314
-8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,381
-8.9  The Message (1976)  [tt0075143]  votes=12,262
-8.8  Inception (2010)  [tt1375666]  votes=2,892,755
-8.8  Fight Club (1999)  [tt0137523]  votes=2,686,804
-8.8  Forrest Gump (1994)  [tt0109830]  votes=2,555,577
+8.9  The Lord of the Rings: The Fellowship of the Ring (2001)  [tt0120737]  votes=2,254,949
+8.9  You Can See Everything (2026)  [tt45368240]  votes=47,644
+8.9  Attack on Titan: The Last Attack (2024)  [tt33175825]  votes=41,234
+8.9  David Attenborough: A Life on Our Planet (2020)  [tt11989890]  votes=36,574
+8.9  O.J.: Made in America (2016)  [tt5275892]  votes=24,316
+8.9  BLEACH: Thousand-Year Blood War - The Calamity (2026)  [tt43383343]  votes=18,383
+8.9  The Message (1976)  [tt0075143]  votes=12,265
+8.8  Inception (2010)  [tt1375666]  votes=2,893,034
+8.8  Fight Club (1999)  [tt0137523]  votes=2,687,062
+8.8  Forrest Gump (1994)  [tt0109830]  votes=2,555,784
 
 === Changes ===
-CHANGE  8.4 → 8.3 (-0.1)  The Legend of Maula Jatt  [tt4139928]
-CHANGE  7.4 → 7.3 (-0.1)  Christmas in Connecticut  [tt0037595]
-NEW     8.2  I Play Rocky (2026)  [tt11995650]
-NEW     7.7  Ugly, Dirty and Bad (1976)  [tt0074252]
+CHANGE  9.0 → 8.9 (-0.1)  You Can See Everything  [tt45368240]
+CHANGE  8.3 → 8.4 (+0.1)  The Legend of Maula Jatt  [tt4139928]
+CHANGE  8.4 → 8.3 (-0.1)  The Odyssey  [tt33764258]
+CHANGE  7.6 → 7.5 (-0.1)  Romeo and Juliet  [tt0063518]
+CHANGE  7.3 → 7.4 (+0.1)  Let the Bullets Fly  [tt1533117]
+CHANGE  7.4 → 7.3 (-0.1)  The American Friend  [tt0075675]
+NEW     7.4  Wicker (2026)  [tt29611136]
+NEW     7.4  Nowhere Special (2020)  [tt11286640]
+NEW     7.2  Daayra (2026)  [tt32634611]

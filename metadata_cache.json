@@ -54955,5 +54955,38 @@
     "boxoffice": "$7,144",
     "runtime": "115 min",
     "cached_at": "2026-11-25T22:36:29.703799+00:00"
+  },
+  "tt29611136": {
+    "rated": "R",
+    "genre": "Comedy, Drama, Fantasy",
+    "director": "Alex Huston Fischer, Eleanor Wilson",
+    "actors": "Olivia Colman, Alexander Skarsgård, Elizabeth Debicki",
+    "language": "English",
+    "country": "United Kingdom, United States, Australia, Hungary",
+    "boxoffice": "$13,261,094",
+    "runtime": "105 min",
+    "cached_at": "2026-11-26T22:25:11.737915+00:00"
+  },
+  "tt11286640": {
+    "rated": "N/A",
+    "genre": "Drama",
+    "director": "Uberto Pasolini",
+    "actors": "James Norton, Daniel Lamont, Carol Moore",
+    "language": "English",
+    "country": "United Kingdom, Italy, Romania",
+    "boxoffice": "$48,330",
+    "runtime": "96 min",
+    "cached_at": "2026-11-26T22:25:11.737915+00:00"
+  },
+  "tt32634611": {
+    "rated": "N/A",
+    "genre": "Drama",
+    "director": "Meghna Gulzar",
+    "actors": "Kareena Kapoor, Prithviraj Sukumaran, Aarti Desai",
+    "language": "Hindi",
+    "country": "India",
+    "boxoffice": "N/A",
+    "runtime": "N/A",
+    "cached_at": "2026-11-26T22:25:11.737915+00:00"
   }
 }
